@@ -5,7 +5,6 @@
 #FROM alpine:latest
 #
 #CMD ["/bin/sh"]
-
 FROM amazoncorretto:11-alpine-jdk
 
 MAINTAINER evana_sabatella
