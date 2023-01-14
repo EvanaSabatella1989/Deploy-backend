@@ -6,4 +6,6 @@ COPY target/demo-0.0.1-SNAPSHOT.jar eds-app.jar
 
 EXPOSE 8080
 
+DOCKER_BUILDKIT=0 docker build .
+
 ENTRYPOINT ["java","-jar","/eds-app.jar"]
