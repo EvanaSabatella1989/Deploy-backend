@@ -1,7 +1,7 @@
-FROM amazoncorretto:17-alpine-jdk
+FROM amazoncorretto:19-alpine-jdk
 
-MAINTAINER emaaristimuno
+MAINTAINER EDS
 
-COPY target/demo-0.0.1-SNAPSHOT.jar demo-0.0.1-SNAPSHOT.jar
+COPY target/demo-0.0.1-SNAPSHOT.jar eds-app.jar
 
-ENTRYPOINT ["java","-jar","/demo-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/eds-app.jar"]
